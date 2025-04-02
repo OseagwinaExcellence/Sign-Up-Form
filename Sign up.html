@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <style>
-       
-    </style>
 </head>
 <body>
     <h1>Sign-Up</h1>
@@ -30,7 +27,7 @@
     </form>
     <form action="DOB">
         <label for="DOB">Date of Birth:</label>
-        <input type="date" name="userDOB" id="DOB" value="2000-01-01">
+        <input type="date" name="userDOB" id="DOB" 
     </form>
     <p>Before you proceed, we would like to ask some questions:</p>
     <form action="options">
@@ -60,13 +57,16 @@
         </select>
     </form>
     <br>
+    <label for="upload-file">Upload your Driver's License: </label>
+    <input type="file" name="upload-file">
+    <br>
     <br>
     <div>
         <img src="/images/Band Members.png" width="200">
         <form action="check">
             
         <label for="check">What is in the picture above:</label>
-        <input list="check"">    
+        <input list="check" placeholder="Choose from the options" value="none">    
         <datalist id="check">
                 <option value="Some dudes">1</option>
                 <option value="Girls">2</option>
@@ -81,9 +81,9 @@
 <form action="check">
     <label for="terms"><strong>Do you agree with the term and conditions. Know that violating these terms would warrant serious punishment</strong></label><input type="checkbox" name="checkbox" id="check" value="yes">
 </form>
-<form action="submit">
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+<a href="/Login.html">Do you have an account, Sign In</a>
+<form action="/home.html">
+    <input type="submit" value="Sign Up">
 </form>
 </body>
 </html>
